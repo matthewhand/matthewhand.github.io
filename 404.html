@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — signal lost · matthewhand.github.io</title>
+<meta name="description" content="Page not found on matthewhand.github.io.">
+<meta name="theme-color" content="#000000">
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root{ --ac:#00ff00; --dim:#008c19; }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html,body{ height:100%; }
+  body{
+    background:#000; color:var(--ac);
+    font-family:'Courier New',Courier,monospace;
+    display:flex; align-items:center; justify-content:center;
+    min-height:100vh; padding:24px; overflow-x:hidden;
+    text-shadow:0 0 6px rgba(0,255,0,.35);
+  }
+  .wrap{ width:100%; max-width:640px; }
+  .bar{ display:flex; align-items:center; gap:9px; font-size:13px; color:var(--dim);
+        border-bottom:1px solid rgba(0,255,0,.3); padding-bottom:10px; margin-bottom:26px; }
+  .dot{ width:9px; height:9px; border-radius:50%; background:var(--ac); box-shadow:0 0 8px var(--ac); }
+  h1{ font-size:clamp(72px,22vw,148px); line-height:.9; font-weight:700; letter-spacing:.02em; }
+  .sub{ margin-top:14px; font-size:clamp(15px,4.5vw,20px); color:#00cc00; }
+  .line{ margin-top:22px; font-size:14px; color:var(--dim); white-space:pre-wrap; word-break:break-word; }
+  .home{ display:inline-flex; align-items:center; gap:8px; margin-top:30px;
+         color:var(--ac); text-decoration:none; font-size:16px;
+         border:1px solid rgba(0,255,0,.5); border-radius:8px; padding:10px 16px; }
+  .home:hover{ background:rgba(0,255,0,.1); border-color:var(--ac); }
+  .cursor{ display:inline-block; width:.6em; height:1.05em; background:var(--ac);
+           vertical-align:-2px; margin-left:4px; animation:blink 1s steps(2) infinite; }
+  @keyframes blink{ 50%{ opacity:0; } }
+  @media (prefers-reduced-motion:reduce){ .cursor{ animation:none; } body{ text-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="bar"><span class="dot"></span><span>[ 404 ]</span><span>guest@matthewhand:~$</span></div>
+    <h1>404</h1>
+    <div class="sub">// signal lost — no route to that path</div>
+    <div class="line">$ cat <span style="color:var(--ac)">requested_page</span>
+cat: requested_page: No such file or directory<span class="cursor"></span></div>
+    <a class="home" href="/">&#8617; cd ~ &nbsp;·&nbsp; back to matthewhand.github.io</a>
+  </main>
+</body>
+</html>
