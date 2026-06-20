@@ -1,0 +1,3 @@
+/* Intentional empty stub. Satisfies a vestigial /assets/ reference left in the
+   exported bundle so it resolves to a clean 200 instead of 404ing. All real
+   styles are inlined in each page. */
